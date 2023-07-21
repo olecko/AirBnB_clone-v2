@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thursday July 20  21:30:54 2023
-@author: Paul Emumena Michael 
+@author: Paul Emumena Michael
 """
 from flask import Flask
 app = Flask(__name__)
