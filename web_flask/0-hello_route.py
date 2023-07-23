@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thursday 20 July 21:35:54 2023
-@author: Paul Emumena Michael
-"""
+"""This Script that starts a Flask web application """
 from flask import Flask
+
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 
 
-@app.route('/', strict_slashes=False)
-def hello():
-    """Start a basic Flask web application"""
+@app.route('/')
+def hello_hbnb():
+    """print web"""
     return 'Hello HBNB!'
 
 
 if __name__ == '__main__':
+    app.run(debug=True)
     app.run(host='0.0.0.0', port=5000)
